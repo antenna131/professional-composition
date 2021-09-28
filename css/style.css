@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.visiuality-hidden {
+    position: absolute;
+    left: -999999px;
+    width: 0px;
+    height: 0;
+    visibility: hidden;
+}    
+header {
+    background-color: #222222;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header-col-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.logo-link {
+    margin-right: 41px;
+}
+.logo-link,.account-link, .cart-link {
+    text-decoration: none;
+    color: white;
+}   
+.burger, .search {
+    background-color: transparent;
+    border: none;
+}
+.header-col-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-link {
+    margin: 0 33px;
+}
+.offer {
+    background-color: #F1E4E6;
+    
+}
+.offer-wrap {
+    height: 765px;
+    background-image: url(../img/man.png);
+    background-repeat: no-repeat;
+    background-position-x: -220px ;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.offer-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 90px;
+}
+.offer-title-small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+.offer-title-pink {
+    color: #F16D7F;
+}
+.categories {
+    padding-top: 65px;
+    padding-bottom: 96px;
+}
+.categories-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categories-item {
+    width: 360px;
+    height: 260px;
+    background-color: #211616B2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+.categories-item-women {
+    background-image:url(../img/women.png);
+}
+.categories-item-men {
+    background-image: url(../img/men.png);
+}
+.categories-item-kids {
+    background-image: url(../img/kids.png);
+}
+.categories-sale {
+    color: #FFFFFF;
+}
+.categories-name {
+    color: #F16D7F;
+    text-decoration: none;
+}
+.categories-item-acc {
+    background-image: url(../img/accesories.png);
+    height: 180px;
+    width: 100%;
+    margin-top: 30px;
+}
+.popular-products {
+    text-align: center;
+}
+.popular-products-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+.popular-products-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-style: normal;
+}
+.popular-products-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}  
+.popular-products-item {
+    background-color: #F8F8F8;
+    width: 360px;
+    height: 581px;
+    margin-bottom: 30px;
+}
+.explain-for-product {
+    text-align: left;
+    padding: 24px 18px 20px 28px;
+}
+.explain-for-product-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+.explain-for-product-price {
+    color: #F16D7F;
+}
+.catalog {
+    border: 1px solid #FF6A6A;
+    padding: 14.5px 38.5px;
+    color: #F26376;
+    background: none;
+    margin-bottom: 95.5px;
+    /* clear: both; */
+    display: inline-block;
+    
+}
+.catalog:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
+.advantages {
+    background-color: #222224;   
+}
+.advantages-wrap {
+    padding: 103px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.advantages-item {
+    width: 360px;
+}
+.advantages-name {
+    padding-top: 28px;
+    padding-bottom: 16px;
+    color:#FBFBFB;
+}
+.advantages-text {
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+}
+.feedback {
+    background-image: url(../img/subscribe-bg.png);
+    background-repeat: no-repeat;
+    background-color: rgba(244, 244, 244, 0.7);
+    background-size: cover;
+}
+.feedback-wrap {
+    padding-top: 86px;
+    padding-bottom: 126px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item {
+    width: 360px;
+    text-align: center;  
+}
+.feedback-item-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.feedback-item-text-italic {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.img-rewiew {
+    padding: 10px 24px 43px 24px;
+}
+.feedback-item-form {
+    padding-top: 64px;
+    margin-right: 75px;
+}
+.feedback-input {
+    margin-top: 32px;
+    padding: 16px 64px 16px 22px;
+    background-color: #E1E1E1;
+    color: #222224;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.67;
+}
+.feedback-heading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.1px;
+
+}
+.subscribe {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40.13px;  
+}
+.subscribe-button {
+    background-color: #F16D7F;
+    padding: 16px 20px;
+    color: #FFFFFF;
+    clear: both;
+    border:none;
+    border-radius: 0 50px 50px 0;
+    margin-left: -5px;
+}
+.subscribe-button:hover{
+    background-color: #E05C6E;
+}
+footer {
+    background-color: #222224;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding: 30px 0;
+}
+.social-icon {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.social-icon-item {
+        margin-left:7px;
+        border-color: black;
+        width: 32px;
+        height: 32px;
+        padding: 8px 9px 11px 11px;
+        background-color:white;
+        text-decoration: none;
+        color: transparent
+}
+.social-icon-item:hover {
+    background-color: #F16D7F;
+}
