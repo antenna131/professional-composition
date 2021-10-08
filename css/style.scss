@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,6 @@ body {
 .wrapper {
     width: 1140px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 .visiuality-hidden {
     position: absolute;
@@ -17,9 +17,10 @@ body {
     width: 0px;
     height: 0;
     visibility: hidden;
-}    
+} 
+/* Шапка    */
 header {
-    background-color: #222222;
+    background-color:$mainblack;
 }
 .header-wrap {
     display: flex;
@@ -51,9 +52,9 @@ header {
 .account-link {
     margin: 0 33px;
 }
+/* Промо блок главной */
 .offer {
-    background-color: #F1E4E6;
-    
+    background-color: #F1E4E6;   
 }
 .offer-wrap {
     height: 765px;
@@ -67,21 +68,34 @@ header {
 }
 .offer-title {
     font-weight: 900;
-    font-size: 48px;
-    line-height: 40px;
-    border-left: 12px solid #F16D7F;
+    @include font(48px,40px);
+    border-left: 12px solid $maincolor;
     padding-left: 16px;
     margin-right: 90px;
 }
 .offer-title-small {
     font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
+    @include font(32px,38px);
+    color: $mainblack;
 }
 .offer-title-pink {
-    color: #F16D7F;
+    color: $maincolor;
 }
+
+/* Промо страницы */
+.page-title {
+    background-color: #F8F3F4;   
+}
+.page-title-heading {
+    font-style: normal;
+    font-weight: normal;
+    @include headfont();
+    color:$maincolor;
+    padding: 60px 0;
+}
+
+
+/* категории товаров */
 .categories {
     padding-top: 65px;
     padding-bottom: 96px;
@@ -113,7 +127,7 @@ header {
     color: #FFFFFF;
 }
 .categories-name {
-    color: #F16D7F;
+    color: $maincolor;
     text-decoration: none;
 }
 .categories-item-acc {
@@ -122,6 +136,7 @@ header {
     width: 100%;
     margin-top: 30px;
 }
+/* Популярные товары  */
 .popular-products {
     text-align: center;
 }
@@ -133,22 +148,54 @@ header {
     margin-top: 48px;
 }
 .popular-products-heading {
-    font-size: 30px;
-    line-height: 36px;
+    @include font(30px,36px);
     font-weight: 400;
     font-style: normal;
 }
 .popular-products-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font();
     color: #9F9F9F;
 }  
 .popular-products-item {
     background-color: #F8F8F8;
-    width: 360px;
+    width: $cardwidth;
     height: 581px;
     margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 420px;
+    position: relative;
+    transition: 0.5s;
+}
+.popular-products-item {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.popular-products-item:hover .overlay {
+    opacity: 1;
+}
+.popular-products-item-button {
+    color: #FFFFFF;
+    padding: 13px 13px 13px 50px;
+    background-color: transparent;
+    @include font();
+    font-weight: normal;
+    border: 1px solid #FFFFFF;
+    background-image: url(../img/cart-btn.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
 }
 .explain-for-product {
     text-align: left;
@@ -156,14 +203,13 @@ header {
 }
 .explain-for-product-text {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font();
     color: #5D5D5D;
     padding-top: 12px;
     padding-bottom: 18px;
 }
 .explain-for-product-price {
-    color: #F16D7F;
+    color:$maincolor;
 }
 .catalog {
     border: 1px solid #FF6A6A;
@@ -171,14 +217,17 @@ header {
     color: #F26376;
     background: none;
     margin-bottom: 95.5px;
-    /* clear: both; */
     display: inline-block;
-    
+    text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include font(16px,19px);
+    font-weight: 400;   
 }
 .catalog:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
+/* Преимущества */
 .advantages {
     background-color: #222224;   
 }
@@ -189,7 +238,7 @@ header {
     text-align: center;
 }
 .advantages-item {
-    width: 360px;
+    width: $cardwidth;
 }
 .advantages-name {
     padding-top: 28px;
@@ -199,18 +248,21 @@ header {
 .advantages-text {
     color: #FBFBFB;
     font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
+    @include font();
     text-align: center;
 }
+
+/* Обратная связь */
 .feedback {
     background-image: url(../img/subscribe-bg.png);
     background-repeat: no-repeat;
     background-color: rgba(244, 244, 244, 0.7);
     background-size: cover;
+    background-position: left bottom;
+    min-height: 448px;
 }
 .feedback-wrap {
-    padding-top: 86px;
+    padding-top: 100px;
     padding-bottom: 126px;
     display: flex;
     justify-content: space-between;
@@ -221,58 +273,64 @@ header {
 }
 .feedback-item-text {
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
+    color: #222224;
+    @include font(20px,24px);
 }
 .feedback-item-text-italic {
     font-style: italic;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
+    color: #222224;
+    @include font(20px,24px);
 }
-
-
 .img-rewiew {
     padding: 10px 24px 43px 24px;
 }
+.feedback-item-subscribe {
+    margin-right: 74px;
+    padding-top: 50px;
+}
+.feedback-heading {
+    @include font(18px,30px);
+    font-weight: 400;
+    color: #222224;
+    margin-bottom: 32px;
+}    
+.subscribe {
+    font-weight: 700;
+    @include font(24px,40px);
+    color: #222224;
+    padding: 16px 20px;  
+}
 .feedback-item-form {
-    padding-top: 64px;
-    margin-right: 75px;
+    margin-top: 32px;
+    width: $cardwidth;
+    display: flex;
 }
 .feedback-input {
-    margin-top: 32px;
     padding: 16px 64px 16px 22px;
     background-color: #E1E1E1;
     color: #222224;
     border: none;
-    border-radius: 50px 0 0 50px;
-    font-size: 14px;
-    line-height: 17px;
-    opacity: 0.67;
-}
-.feedback-heading {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30.1px;
-
-}
-.subscribe {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 40.13px;  
+    border-radius: 27px 0 0 27px;
+    &::placeholder {
+        font-weight: normal;
+        @include font();
+        color:#222224;
+        opacity: 0.67;
+    }
 }
 .subscribe-button {
-    background-color: #F16D7F;
-    padding: 16px 20px;
+    background-color:$maincolor;
+    padding: 7px 8px;
     color: #FFFFFF;
-    clear: both;
     border:none;
-    border-radius: 0 50px 50px 0;
-    margin-left: -5px;
-}
-.subscribe-button:hover{
-    background-color: #E05C6E;
-}
+    border-radius: 0 27px 27px 0;
+    @include font();
+    &:hover{
+        background-color: #E05C6E;
+    }
+}    
+/* Подвал */
 footer {
     background-color: #222224;
 }
@@ -282,8 +340,7 @@ footer {
     align-items: center;
 }
 .copyright {
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px,19px);
     color: #FBFBFB;
     padding: 30px 0;
 }
@@ -295,14 +352,19 @@ footer {
 }
 .social-icon-item {
         margin-left:7px;
-        border-color: black;
         width: 32px;
         height: 32px;
         padding: 8px 9px 11px 11px;
         background-color:white;
         text-decoration: none;
-        color: transparent
+        color: transparent;
+        &:hover{
+            background-color: $maincolor;
+        }
 }
-.social-icon-item:hover {
-    background-color: #F16D7F;
+.social-icon-item-img {
+    fill: black;
+    &:hover {
+        fill: white;
+    }
 }
