@@ -1,0 +1,125 @@
+
+.cart-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+.cart-item-right {
+    padding-right: 130px;
+}
+.cart-product-item {
+    display: flex;
+    align-items: center;
+    width: 752px;
+    padding-bottom: 40px;
+    // box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.cart-product-img {
+    background-color: #f3eeef;
+    width: 260px;
+    height: 306px;
+}
+.cart-product-explain-heading {
+    padding: 22px 97px 40px 31px;
+    @include headfont();
+}
+.cart-product-explain-text-item {
+    padding-left: 32px;
+    padding-bottom: 6px;
+    @include font(22px,26px);
+    font-weight: normal;
+    color: #575757;
+    &-pink {
+        color: $maincolor;
+    }
+}
+.quality {
+    display: flex;
+}
+.cart-product-explain-quality {
+    @include font(18px,22px);
+    font-weight: normal;
+    color: #656565;
+    width: 43px;
+    padding: 0.5px 8px;
+    margin-left: 24px;
+}
+.cart-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 72.5px;
+    padding-bottom: 130px;
+}
+.cart-button-item {
+    padding: 16px 39px;
+    @include font( );
+    font-weight: 300;
+    background-color: transparent;
+    border: $thinborder;
+    color: #000000;
+}
+.cart-item {
+    width: $cardwidth;
+}
+.cart-item-input {
+    font-weight: 300;
+    @include font(16px,19px);
+    color: $mainblack;
+    border: $thinborder;
+    width: $cardwidth;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+    margin-bottom: 20px;
+    &::placeholder {
+        @include font(13px,16px);
+        font-weight: 300;
+        color: #B1B1B1;
+    }
+}
+.cart-item-button {
+    font-weight: 300;
+    @include font(11px,13px);
+    color: #4A4A4A;
+   padding:9.5px 11.5px 14px 14px;
+   background-color: transparent;
+   border: $thinborder;
+}
+.cart-item-sum {
+    background-color: #F5F3F3;
+    padding:39px 34px 42px 44px;
+}
+.cart-item-text-sub {
+    color: #4A4A4A;
+    font-weight: 300;
+    text-align: right;
+    @include font(11px,13px);
+    &-summa {
+        padding-left: 30px;
+    }
+}
+.cart-item-text-grand {
+    font-weight: 300;
+    @include font(16px,19px);
+    color: $mainblack;
+    text-align: right;
+    padding-top: 12px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    &-pink {
+        color: $maincolor;
+        padding-left: 30px;
+    }
+}
+.cart-item-submit {
+    margin-top: 17px;
+    font-weight: 300;
+    @include font(16px,19px);
+    color:#FFFFFF;
+    background-color: $maincolor;
+    padding: 15px 42px;
+    text-align: center;
+    border:none;
+}

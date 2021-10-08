@@ -1,0 +1,81 @@
+/*Каталог*/
+
+.page-title-wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.page-title-heading-catalog {
+    color: $maincolor;
+    @include headfont();
+}
+.breadcrumb {
+    display: flex;
+}
+.breadcrumb-item {
+    @include font();
+    font-weight: 300;
+    list-style-type: none;
+    padding: 65px 0;
+}
+.breadcrumb-item-link {
+    text-decoration: none;
+}
+.active {
+    font-weight: 700;
+    color: $maincolor;
+}
+.product-selection {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    padding-top: 51px;
+    padding-bottom: 64px;
+}
+.product-selection-item {
+    width: $cardwidth;
+    margin-right: 30px;
+    text-align: left;
+}
+filter {
+    text-decoration: none;
+    color: #000000;
+    @include font();
+    &:hover{
+        color: $maincolor;
+    }
+}
+.filter-content {
+    list-style-type: none;
+}
+.filter-img {
+    fill:black;
+    margin-left: 11px;
+    &:hover{
+        fill: $maincolor;
+    }
+}
+.sort {
+    display: flex;
+
+}
+.product-sort-item {
+    padding-right: 28px;
+}
+.pagination-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 48.5px;
+    margin-bottom: 96.5px;
+    padding:12px 30px 12px 30px;
+}
+.page-link {
+    text-decoration: none;
+    color: $maincolor;
+}
+.page-item {
+    padding-right: 20px;
+    @include font(16px,19px);   
+}

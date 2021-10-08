@@ -1,0 +1,61 @@
+/*Форма регистрации */
+
+.registration {
+    background-color: #FFFFFF;
+}
+.registration-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.registration-right {
+    padding-right: 130px;
+}
+fieldset { 
+    border: none;
+    padding-bottom: 33px
+}
+legend {
+    @include font(16px,19px);
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.registration-input {
+    margin-bottom: 21px;
+    padding:13px 170px 16px 16px;
+    border: none;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    &::placeholder {
+        color:#B1B1B1;
+        @include font(13px,16px)
+    }
+}
+.registration-label {
+    @include font(11px,13px);
+    font-weight: 300;
+}
+.registration-name-radio {
+  margin-right: 10px;  
+}
+.registration-name-text {
+    @include font(13px,16px);
+    font-weight: 300;
+    color: #B1B1B1;
+}
+
+.registration-left-text {
+    @include headfont();
+    font-weight: 300;
+    padding-bottom: 21px;
+    
+}
+.registration-name-button {
+   background-color: $maincolor;
+   color: #FFFFFF;
+   @include font();
+   padding: 16px 60px 16px 16px;
+   margin-top: 39px;
+   border: none; 
+}
+
