@@ -1,19 +1,17 @@
-
 .cart-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
     margin-top: 96px;
 }
-.cart-item-right {
-    padding-right: 130px;
-}
+// .cart-item-right {
+//     padding-right: 130px;
+// }
 .cart-product-item {
     display: flex;
     align-items: center;
-    width: 752px;
-    padding-bottom: 40px;
-    // box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 .cart-product-img {
     background-color: #f3eeef;
@@ -111,8 +109,10 @@
     &-pink {
         color: $maincolor;
         padding-left: 30px;
+        font-weight: 700;
     }
 }
+
 .cart-item-submit {
     margin-top: 17px;
     font-weight: 300;

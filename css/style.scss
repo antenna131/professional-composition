@@ -1,3 +1,6 @@
+/* переменные */
+@import "_variable.scss";
+
 
 *{
     margin: 0;
@@ -7,8 +10,9 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
 .wrapper {
-    width: 1140px;
+    width: $displaywidth;
     margin: 0 auto;
 }
 .visiuality-hidden {
@@ -227,6 +231,12 @@ header {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
+.center {
+    width:calc($displaywidth/50) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Преимущества */
 .advantages {
     background-color: #222224;   
@@ -350,6 +360,7 @@ footer {
     justify-content: space-between;
     align-items: center; 
 }
+
 .social-icon-item {
         margin-left:7px;
         width: 32px;
@@ -360,11 +371,17 @@ footer {
         color: transparent;
         &:hover{
             background-color: $maincolor;
+            color: white;
         }
 }
 .social-icon-item-img {
     fill: black;
-    &:hover {
-        fill: white;
-    }
+}   
+.social-icon-item:hover .social-icon-item-img {
+    fill: white;
 }
+
+@import "_cart.scss";
+@import "_catalog.scss";
+@import "_registration.scss";
+@import "_product.scss"

@@ -1,0 +1,117 @@
+.slider {
+    background-color: #F7F7F7;
+    position: relative;
+    padding-bottom: $shift;
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    &-img {
+        padding-top: 11px;
+        padding-bottom: 42px;
+    }
+    &-button {
+        background: rgba(42, 42, 42, 0.15);
+        padding: 12px 17px;
+        border: 1px solid transparent;
+        color: black;
+        position: absolute;
+        &:hover {
+            color: $maincolor;
+        }
+    &-left {
+        left: 5px;
+    }
+    &-right {
+        right: 5px;
+    }
+    &-img {
+        fill: black;
+    }
+    }
+}
+
+.slider-button:hover .slider-button-img {
+    fill: $maincolor;
+}
+
+/*Блок описания товара*/
+.about-wrap {
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    margin-top: -$shift;
+    position: relative;    
+}
+.about-explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 250px;
+
+    &-collection {
+    font-weight: 300;
+    @include font;
+    color: $maincolor;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 12px;
+    }
+    &-dark-hr {
+        fill: $darkmain;
+    }
+    &-heading {
+        font-weight: 300;
+        @include font (18px,22px);
+        color: #4D4D4D;
+        text-align: center;
+        padding-top: 12px;
+    }
+    &-text {
+        font-weight: 300;
+        @include font;
+        color:#5E5E5E;
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+    &-price {
+        font-weight: 300;
+        @include headfont;
+        color: $darkmain;
+        padding-bottom: 65px;
+    }
+     &-hr {
+        overflow: visible;
+        color: rgba(234, 234, 234, 1) ;
+        height: 1px;
+        width: 100%;
+    }
+
+}
+.about-sort {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 48px;
+}
+.about-button {
+    background-image: url(../img/cart-pink.svg);
+    background-position: 23.5px;
+    background-repeat: no-repeat;
+    color: #F26376;
+    background-color: transparent;
+    padding: 14px 56px 14px 72px;
+    border: 1px solid #FF6A6A;
+    @include font (16px, 19px);
+    font-weight: normal;
+}
+
+    
+
+
+
+
+.similar {
+    margin-bottom: $margin;
+}

@@ -1,5 +1,5 @@
 /*Форма регистрации */
-
+ 
 .registration {
     background-color: #FFFFFF;
 }
@@ -43,19 +43,31 @@ legend {
     font-weight: 300;
     color: #B1B1B1;
 }
+.registration-left-heading {
+    @include headfont();
+    font-weight: 300;
+    padding-bottom: 21px;
+}
 
 .registration-left-text {
     @include headfont();
     font-weight: 300;
     padding-bottom: 21px;
-    
+    &::before{
+        content: url(../img/check.svg);
+    }   
 }
 .registration-name-button {
-   background-color: $maincolor;
-   color: #FFFFFF;
-   @include font();
-   padding: 16px 60px 16px 16px;
-   margin-top: 39px;
-   border: none; 
+    background-image: url(../img/arrow-cart-btn.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: center;
+    background-color: $maincolor;
+    color: #FFFFFF;
+    @include font();
+    padding: 16px 60px 16px 16px;
+    margin-top: 39px;
+    border: none; 
 }
+
 

@@ -1,0 +1,161 @@
+/*Каталог*/
+ 
+.page-title-wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.page-title-heading-catalog {
+    color: $maincolor;
+    @include headfont();
+}
+.breadcrumb {
+    display: flex;
+}
+.breadcrumb-item {
+    @include font();
+    font-weight: 300;
+    list-style-type: none;
+    padding: 65px 0;
+}
+.breadcrumb-item-link {
+    text-decoration: none;
+}
+.active {
+    font-weight: 700;
+    color: $maincolor;
+}
+/* Сортировка*/
+
+.filter {
+    ::-webkit-details-marker {display: none;}
+}
+
+.selection-wrap {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    padding-top: 51px;
+    padding-bottom: 64px;
+    margin-bottom: 20px;
+}
+.sort{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: $cardwidth;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.filter {
+    width: $cardwidth;
+    position: relative;
+    margin-bottom: 30px;
+    background-color: white;
+    &-block {
+        width: 100%;
+        position: absolute;
+        
+    }
+    &-title {
+        text-decoration: none;
+        color: black;
+        padding-bottom: 16px;
+        &:hover{
+            color: $maincolor;
+        }    
+    }
+    &-category {
+        color: $grey;
+        @include font();
+        font-weight: 400;
+        padding-top: 8px;
+        padding-bottom: 11.5px;
+        padding-left: 11px;
+        margin-bottom: 18px;
+        border-left: $pinkborder;
+        display: block;
+        border-bottom: 1px solid #EBEBEB;
+        &-pink {
+            color: $maincolor;
+        }
+    }
+    &-item {
+        font-weight: normal;
+        @include font;
+        padding-bottom: 11px;
+
+    }
+    &-list {
+        list-style-type: none;
+        padding-top: 24px;
+        padding-left: 11px;
+        padding-bottom: 16px;
+    }
+    &-link {
+        text-decoration: none;
+        color: $grey;
+    }
+
+}
+.filter-block 
+    ::-webkit-details-marker {
+    display: none;
+}
+      
+.filter-img {
+    fill:black;
+    margin-left: 11px;
+    &:hover{
+    fill: $maincolor;
+    }
+}
+.input {
+    &-drop {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &-title {
+        display: none;
+    }
+    &-check {
+        display: none;
+    }
+}
+.item-title:hover .input-drop {
+    display: block;
+
+}
+
+
+
+
+    
+
+
+   
+.pagination-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    list-style-type: none;
+    margin-top: 48.5px;
+    margin-bottom: 96.5px;
+    padding:12px 30px 12px 30px;
+    border: 1px solid #EBEBEB;
+}
+.page-link {
+    text-decoration: none;
+    color: $maincolor;
+}
+.page-item {
+    padding-right: 20px;
+    @include font(16px,19px);
+    &-last {
+        padding-right: 0;
+    }   
+}
