@@ -15,7 +15,7 @@
     <header class="header">
         <div class="wrapper header-wrap">
             <div class="header-col-left">
-                <a class="logo-link" href="#"><img src="img/logo.svg" alt="Logo">
+                <a class="logo-link" href="index.html"><img src="img/logo.svg" alt="Logo">
                 </a>
                 <button class="search"><img src="img/search.svg" alt="Search">
                 </button> 
@@ -23,9 +23,9 @@
             <div class="header-col-right">
                 <button class="burger"><img src="img/menu.svg" alt="menu">
                 </button>
-                <a class="account-link" href="#"><img src="img/account.svg" alt="account">
+                <a class="account-link"><img src="img/account.svg" alt="account">
                 </a>
-                <a class="cart-link" href="#"><img src="img/cart.svg" alt="cart">
+                <a class="cart-link" href="cart.html"><img src="img/cart.svg" alt="cart">
                 </a> 
             </div>
         </div> 
@@ -41,17 +41,17 @@
                 <form class="registration=form"action="#">
                     <fieldset class="registration-name" >
                         <legend>Your Name</legend>
-                        <p><input class="registration-input " type="text" placeholder="First Name"></p>
-                        <p><input class="registration-input " type="text" placeholder="Last Name"></p>
-                        <label><input  class="registration-name-radio" type="radio" name="gender" value="M">Male</label>
-                        <label><input  class="registration-name-radio" type="radio" name="gender" value="W">Female</label>
+                        <p><input class="registration-input" type="text" placeholder="First Name" required></p>
+                        <p><input class="registration-input" type="text" placeholder="Last Name"></p>
+                        <label><input  class="registration-name-radio" type="radio" name="gender" value="M" required>Male</label>
+                        <label><input  class="registration-name-radio" type="radio" name="gender" value="W" required>Female</label>
                     </fieldset>
                     <fieldset>
                         <legend>Login details</legend>
-                        <p><input class="registration-input " type="email" placeholder="Email"></p>
-                        <p><input class="registration-input"  type="password" placeholder="Password"></p>
+                        <p><input class="registration-input " type="email" placeholder="Email" required></p>
+                        <p><input class="registration-input"  type="password" placeholder="Password" required></p>
                         <p class="registration-name-text" >Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                        <button class="registration-name-button"  > JOIN NOW
+                        <button class="registration-name-button"> JOIN NOW
                         </button>
                     </fieldset>
                 </form>
@@ -142,6 +142,5 @@
             </div>
         </div>
     </footer>
- 
 </body>
 </html>

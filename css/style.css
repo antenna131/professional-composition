@@ -296,6 +296,14 @@ header {
   padding: 24px 18px 20px 28px;
 }
 
+.explain-for-product-head {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
 .explain-for-product-text {
   font-weight: 300;
   font-size: 14px;
@@ -755,6 +763,11 @@ footer {
   border: none;
 }
 
+.cart-item-submit:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
+
 /*Каталог*/
 .page-title-wrap {
   display: -webkit-box;
@@ -790,6 +803,7 @@ footer {
 
 .breadcrumb-item-link {
   text-decoration: none;
+  color: #6F6E6E;
 }
 
 .active {
@@ -797,26 +811,115 @@ footer {
   color: #F16D7F;
 }
 
-/* Сортировка*/
-.filter ::-webkit-details-marker {
-  display: none;
-}
-
+/*Блок фильтра*/
 .selection-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 51px;
   padding-bottom: 64px;
-  margin-bottom: 20px;
 }
 
+.filter {
+  width: 360px;
+  background-color: white;
+  text-align: left;
+}
+
+.filter-details {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.filter-details-center {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.filter-title {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.filter-title:hover {
+  color: #F16D7F;
+}
+
+.filter-drop {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.filter-category {
+  color: #6F6E6E;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  padding-top: 8px;
+  padding-bottom: 11.5px;
+  padding-left: 11px;
+  border-left: 5px solid #F16D7F;
+  display: block;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.filter-category:hover {
+  color: #F16D7F;
+}
+
+.filter-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 11px;
+  text-align: left;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding-top: 24px;
+  padding-left: 12px;
+}
+
+.filter-link {
+  text-decoration: none;
+  color: #6F6E6E;
+}
+
+.filter-img {
+  fill: black;
+  margin-left: 11px;
+}
+
+.filter-details
+::-webkit-details-marker {
+  display: none;
+}
+
+.filter-details-main:hover .filter-drop {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-details-main:hover .filter-img {
+  fill: #F16D7F;
+}
+
+/* Сортировка*/
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,81 +931,8 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 360px;
-  margin-right: 30px;
   text-align: left;
-}
-
-.filter {
-  width: 360px;
-  position: relative;
-  margin-bottom: 30px;
-  background-color: white;
-}
-
-.filter-block {
-  width: 100%;
-  position: absolute;
-}
-
-.filter-title {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 16px;
-}
-
-.filter-title:hover {
-  color: #F16D7F;
-}
-
-.filter-category {
-  color: #6F6E6E;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  padding-top: 8px;
-  padding-bottom: 11.5px;
-  padding-left: 11px;
-  margin-bottom: 18px;
-  border-left: 5px solid #F16D7F;
-  display: block;
-  border-bottom: 1px solid #EBEBEB;
-}
-
-.filter-category-pink {
-  color: #F16D7F;
-}
-
-.filter-item {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  padding-bottom: 11px;
-}
-
-.filter-list {
-  list-style-type: none;
-  padding-top: 24px;
-  padding-left: 11px;
-  padding-bottom: 16px;
-}
-
-.filter-link {
-  text-decoration: none;
-  color: #6F6E6E;
-}
-
-.filter-block
-::-webkit-details-marker {
-  display: none;
-}
-
-.filter-img {
-  fill: black;
-  margin-left: 11px;
-}
-
-.filter-img:hover {
-  fill: #F16D7F;
+  padding-left: 30px;
 }
 
 .input-drop {
@@ -1057,6 +1087,7 @@ legend {
 
 .registration-left-text::before {
   content: url(../img/check.svg);
+  padding-right: 23px;
 }
 
 .registration-name-button {

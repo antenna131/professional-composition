@@ -4,9 +4,7 @@
     align-items:flex-start;
     margin-top: 96px;
 }
-// .cart-item-right {
-//     padding-right: 130px;
-// }
+
 .cart-product-item {
     display: flex;
     align-items: center;
@@ -122,4 +120,8 @@
     padding: 15px 42px;
     text-align: center;
     border:none;
+    &:hover {
+        background-color: #FFFFFF;
+        color: $maincolor;
+    }
 }

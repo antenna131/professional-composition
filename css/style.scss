@@ -204,17 +204,24 @@ header {
 .explain-for-product {
     text-align: left;
     padding: 24px 18px 20px 28px;
+    &-head {
+        text-decoration: none;
+        color: black;
+        @include font (13px, 16px);
+        font-weight: normal;
+    }
+    &-text {
+        font-weight: 300;
+        @include font();
+        color: #5D5D5D;
+        padding-top: 12px;
+        padding-bottom: 18px;
+    }
+    &-price {
+        color: $maincolor;
+    }
 }
-.explain-for-product-text {
-    font-weight: 300;
-    @include font();
-    color: #5D5D5D;
-    padding-top: 12px;
-    padding-bottom: 18px;
-}
-.explain-for-product-price {
-    color:$maincolor;
-}
+
 .catalog {
     border: 1px solid #FF6A6A;
     padding: 14.5px 38.5px;
