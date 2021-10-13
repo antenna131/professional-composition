@@ -109,7 +109,7 @@
 }
 
 .filter-details-main:hover .filter-drop {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    box-shadow: $shadow
 } 
 .filter-details-main:hover .filter-img{
     fill: $maincolor;
@@ -142,13 +142,6 @@
     display: block;
 
 }
-
-
-
-
-    
-
-
    
 .pagination-wrap {
     display: flex;
@@ -161,14 +154,17 @@
     padding:12px 30px 12px 30px;
     border: 1px solid #EBEBEB;
 }
-.page-link {
+
+.page {
+    &-link {
     text-decoration: none;
     color: $maincolor;
-}
-.page-item {
-    padding-right: 20px;
-    @include font(16px,19px);
-    &-last {
+    }
+    &-item {
+        padding-right: 20px;
+        @include font(16px,19px);
+        &-last {
         padding-right: 0;
-    }   
+        }
+    }    
 }

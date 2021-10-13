@@ -9,6 +9,7 @@ $margin:128px;
 $displaywidth:1140px;
 $pinkborder:5px solid $maincolor;
 $grey:#6F6E6E;
+$shadow:6px 4px 35px rgba(0, 0, 0, 0.21);
  
 
 @mixin font ($size:14px, $line:17px) {
