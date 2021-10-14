@@ -1,14 +1,13 @@
 /* переменные */
 @import "_variable.scss";
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .wrapper {
@@ -21,19 +20,19 @@ body {
     width: 0px;
     height: 0;
     visibility: hidden;
-} 
+}
 /* Шапка    */
 @import "_header.scss";
 
 /* Промо блок главной */
 .offer {
-    background-color: #F1E4E6;   
+    background-color: #F1E4E6;
 }
 .offer-wrap {
     height: 765px;
     background-image: url(../img/man.png);
     background-repeat: no-repeat;
-    background-position-x: -220px ;
+    background-position-x: -220px;
     background-position-y: bottom;
     display: flex;
     align-items: center;
@@ -41,14 +40,14 @@ body {
 }
 .offer-title {
     font-weight: 900;
-    @include font(48px,40px);
+    @include font(48px, 40px);
     border-left: 12px solid $maincolor;
     padding-left: 16px;
     margin-right: 90px;
 }
 .offer-title-small {
     font-weight: bold;
-    @include font(32px,38px);
+    @include font(32px, 38px);
     color: $mainblack;
 }
 .offer-title-pink {
@@ -57,16 +56,15 @@ body {
 
 /* Промо страницы */
 .page-title {
-    background-color: #F8F3F4;   
+    background-color: #F8F3F4;
 }
 .page-title-heading {
     font-style: normal;
     font-weight: normal;
     @include headfont();
-    color:$maincolor;
+    color: $maincolor;
     padding: 60px 0;
 }
-
 
 /* категории товаров */
 .categories {
@@ -86,9 +84,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}    
+}
 .categories-item-women {
-    background-image:url(../img/women.png);
+    background-image: url(../img/women.png);
 }
 .categories-item-men {
     background-image: url(../img/men.png);
@@ -109,6 +107,9 @@ body {
     width: 100%;
     margin-top: 30px;
 }
+/* Фильтр и сортировка товаров*/
+@import "_catalog.scss";
+
 /* Популярные товары  */
 .popular-products {
     text-align: center;
@@ -121,7 +122,7 @@ body {
     margin-top: 48px;
 }
 .popular-products-heading {
-    @include font(30px,36px);
+    @include font(30px, 36px);
     font-weight: 400;
     font-style: normal;
 }
@@ -129,7 +130,7 @@ body {
     font-weight: 400;
     @include font();
     color: #9F9F9F;
-}  
+}
 .popular-products-item {
     background-color: #F8F8F8;
     width: $cardwidth;
@@ -176,7 +177,7 @@ body {
     &-head {
         text-decoration: none;
         color: black;
-        @include font (13px, 16px);
+        @include font(13px, 16px);
         font-weight: normal;
     }
     &-text {
@@ -200,22 +201,33 @@ body {
     display: inline-block;
     text-decoration: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    @include font(16px,19px);
-    font-weight: 400;   
+    @include font(16px, 19px);
+    font-weight: 400;
 }
 .catalog:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
 .center {
-    width:calc($displaywidth/50) ;
+    width: $displaywidth/2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* Страница продукта */
+@import "_product.scss";
+
+/* Регистрация */
+
+@import "_registration.scss";
+
+/* Корзина */
+
+@import "_cart.scss";
+
 /* Преимущества */
 .advantages {
-    background-color: #222224;   
+    background-color: #222224;
 }
 .advantages-wrap {
     padding: 103px 0;
@@ -229,7 +241,7 @@ body {
 .advantages-name {
     padding-top: 28px;
     padding-bottom: 16px;
-    color:#FBFBFB;
+    color: #FBFBFB;
 }
 .advantages-text {
     color: #FBFBFB;
@@ -255,18 +267,18 @@ body {
 }
 .feedback-item {
     width: 360px;
-    text-align: center;  
+    text-align: center;
 }
 .feedback-item-text {
     font-weight: normal;
     color: #222224;
-    @include font(20px,24px);
+    @include font(20px, 24px);
 }
 .feedback-item-text-italic {
     font-style: italic;
     font-weight: normal;
     color: #222224;
-    @include font(20px,24px);
+    @include font(20px, 24px);
 }
 .img-rewiew {
     padding: 10px 24px 43px 24px;
@@ -276,16 +288,16 @@ body {
     padding-top: 50px;
 }
 .feedback-heading {
-    @include font(18px,30px);
+    @include font(18px, 30px);
     font-weight: 400;
     color: #222224;
     margin-bottom: 32px;
-}    
+}
 .subscribe {
     font-weight: 700;
-    @include font(24px,40px);
+    @include font(24px, 40px);
     color: #222224;
-    padding: 16px 20px;  
+    padding: 16px 20px;
 }
 .feedback-item-form {
     margin-top: 32px;
@@ -301,21 +313,21 @@ body {
     &::placeholder {
         font-weight: normal;
         @include font();
-        color:#222224;
+        color: #222224;
         opacity: 0.67;
     }
 }
 .subscribe-button {
-    background-color:$maincolor;
+    background-color: $maincolor;
     padding: 7px 8px;
     color: #FFFFFF;
-    border:none;
+    border: none;
     border-radius: 0 27px 27px 0;
     @include font();
-    &:hover{
+    &:hover {
         background-color: #E05C6E;
     }
-}    
+}
 /* Подвал */
 footer {
     background-color: #222224;
@@ -326,7 +338,7 @@ footer {
     align-items: center;
 }
 .copyright {
-    @include font(16px,19px);
+    @include font(16px, 19px);
     color: #FBFBFB;
     padding: 30px 0;
 }
@@ -334,30 +346,25 @@ footer {
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .social-icon-item {
-        margin-left:7px;
-        width: 32px;
-        height: 32px;
-        padding: 8px 9px 11px 11px;
-        background-color:white;
-        text-decoration: none;
-        color: transparent;
-        &:hover{
-            background-color: $maincolor;
-            color: white;
-        }
+    margin-left: 7px;
+    width: 32px;
+    height: 32px;
+    padding: 8px 9px 11px 11px;
+    background-color: white;
+    text-decoration: none;
+    color: transparent;
+    &:hover {
+        background-color: $maincolor;
+        color: white;
+    }
 }
 .social-icon-item-img {
     fill: black;
-}   
+}
 .social-icon-item:hover .social-icon-item-img {
     fill: white;
 }
-
-@import "_cart.scss";
-@import "_catalog.scss";
-@import "_registration.scss";
-@import "_product.scss"

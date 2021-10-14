@@ -34,7 +34,7 @@
     justify-content:start;
     align-items:flex-start;
     padding-top: 51px;
-    padding-bottom: 64px;   
+    padding-bottom: 16px;   
 }
 .selection-item {
     width: $cardwidth;
@@ -125,33 +125,55 @@
 /* Сортировка*/
 .sort{
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: $cardwidth;
     text-align: left;
     padding-left: 30px;
+    position: relative;
+    z-index: 1;
+    &-title {
+        text-transform: uppercase;
+        font-weight: normal;
+        @include font;
+        color: $grey;
+    }
 }
+
 .input {
     &-drop {
         position: absolute;
+        z-index: 2;
         display: flex;
         flex-direction: column;
+        width: 79px;
+        height: 105px;
+        top: 33px;
+        background-color: #FFFFFF;
+        padding: 10px;
         
     }
     &-title {
-        display: none;
+        color: $grey;
+        @include font (14px, 16px);
+        font-weight:normal;
+        text-transform: uppercase;
+        padding-left: 9.5px;   
     }
     &-check {
-        display: none;
+        border: 1px solid #EBEBEB;
+        margin-bottom: 13px;
+        margin-right: 9.5px;
     }
 }
-// .sort-title:hover .input-drop {
-//     display: block;
 
-// }
-.sort-item::-webkit-details-marker {
+.sort-item ::-webkit-details-marker {
     display: none;
-}    
+} 
+.sort-item[open] .input-drop {
+    box-shadow: $shadow;
+}
+   
 
 
 .pagination-wrap {
