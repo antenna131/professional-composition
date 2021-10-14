@@ -34,24 +34,18 @@
     justify-content:start;
     align-items:flex-start;
     padding-top: 51px;
-    padding-bottom: 64px;
-    
+    padding-bottom: 64px;   
 }
-
-.filter {
+.selection-item {
     width: $cardwidth;
     background-color: white;
     text-align: left;
-    &-details {
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        &-center {
-            margin-top: 18px;
-            margin-bottom: 18px;
-        }       
-    }
-    &-title {
+}
+.filter {
+    width: 100%;
+    position: relative;
+    z-index: 1;    
+    &-name {
         display: block;
         text-decoration: none;
         color: black;
@@ -68,6 +62,12 @@
         width: 100%;
         background-color: #FFFFFF;
     }
+    &-title {
+        &:nth-child(2) {
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }   
+    }
     &-category {
         color: $grey;
         @include font();
@@ -78,9 +78,6 @@
         border-left: $pinkborder;
         display: block;
         border-bottom: 1px solid #EBEBEB;
-        &:hover {
-            color: $maincolor;
-        }
     }
     &-item {
         font-weight: normal;
@@ -102,25 +99,35 @@
     margin-left: 11px;
     }    
 }
-
-.filter-details 
+/* Правила для действий с filter*/
+.filter
     ::-webkit-details-marker {
     display: none;
-}
+    }    
 
-.filter-details-main:hover .filter-drop {
-    box-shadow: $shadow
-} 
-.filter-details-main:hover .filter-img{
+.filter:hover .filter-img{
     fill: $maincolor;
 }
+
+.filter[open] .filter-name {
+    color: $maincolor;
+    padding-left: 10px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.21);;
+}
+.filter[open] .filter-img {
+    fill: $maincolor;
+}
+.filter-title[open] .filter-category {
+    color: $maincolor;
+
+}
+
 /* Сортировка*/
 .sort{
     display: flex;
     justify-content: left;
     align-items: flex-start;
     width: $cardwidth;
-    // margin-right: 30px;
     text-align: left;
     padding-left: 30px;
 }
@@ -138,11 +145,15 @@
         display: none;
     }
 }
-.item-title:hover .input-drop {
-    display: block;
+// .sort-title:hover .input-drop {
+//     display: block;
 
-}
-   
+// }
+.sort-item::-webkit-details-marker {
+    display: none;
+}    
+
+
 .pagination-wrap {
     display: flex;
     justify-content: center;
@@ -163,8 +174,9 @@
     &-item {
         padding-right: 20px;
         @include font(16px,19px);
-        &-last {
+        &:nth-child(7) {
         padding-right: 0;
         }
+
     }    
 }

@@ -903,24 +903,19 @@ footer {
   padding-bottom: 64px;
 }
 
-.filter {
+.selection-item {
   width: 360px;
   background-color: white;
   text-align: left;
 }
 
-.filter-details {
+.filter {
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
-.filter-details-center {
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.filter-title {
+.filter-name {
   display: block;
   text-decoration: none;
   color: black;
@@ -930,7 +925,7 @@ footer {
   line-height: 17px;
 }
 
-.filter-title:hover {
+.filter-name:hover {
   color: #F16D7F;
 }
 
@@ -939,6 +934,11 @@ footer {
   z-index: 2;
   width: 100%;
   background-color: #FFFFFF;
+}
+
+.filter-title:nth-child(2) {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .filter-category {
@@ -952,10 +952,6 @@ footer {
   border-left: 5px solid #F16D7F;
   display: block;
   border-bottom: 1px solid #EBEBEB;
-}
-
-.filter-category:hover {
-  color: #F16D7F;
 }
 
 .filter-item {
@@ -982,18 +978,29 @@ footer {
   margin-left: 11px;
 }
 
-.filter-details
+/* Правила для действий с filter*/
+.filter
 ::-webkit-details-marker {
   display: none;
 }
 
-.filter-details-main:hover .filter-drop {
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+.filter:hover .filter-img {
+  fill: #F16D7F;
 }
 
-.filter-details-main:hover .filter-img {
+.filter[open] .filter-name {
+  color: #F16D7F;
+  padding-left: 10px;
+  -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 0 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter[open] .filter-img {
   fill: #F16D7F;
+}
+
+.filter-title[open] .filter-category {
+  color: #F16D7F;
 }
 
 /* Сортировка*/
@@ -1031,8 +1038,8 @@ footer {
   display: none;
 }
 
-.item-title:hover .input-drop {
-  display: block;
+.sort-item::-webkit-details-marker {
+  display: none;
 }
 
 .pagination-wrap {
@@ -1064,7 +1071,7 @@ footer {
   line-height: 19px;
 }
 
-.page-item-last {
+.page-item:nth-child(7) {
   padding-right: 0;
 }
 
