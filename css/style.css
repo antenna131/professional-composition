@@ -1437,6 +1437,38 @@ footer {
     font-size: 16px;
     line-height: 19px;
   }
+  .cart-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 96px;
+  }
+  .cart-item {
+    width: 100%;
+    margin-bottom: 147px;
+  }
+  .cart-item-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 15px;
+  }
+  .cart-item-sum {
+    margin-top: 35px;
+    min-height: 214px;
+    padding-bottom: 0;
+    margin-bottom: 42px;
+  }
   .advantages-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1536,7 +1568,8 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .registration-right, .registration-left {
+  .registration-right,
+  .registration-left {
     padding: 20px 5px;
     width: 339px;
   }

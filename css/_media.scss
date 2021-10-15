@@ -56,6 +56,29 @@
         //     // text-align: justify;
         // }
     }
+    .cart-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 96px;
+    }
+    .cart-item {
+        width: 100%;
+        margin-bottom: 147px;
+    }
+    .cart-item-form {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .cart-item-sum {
+        margin-top: 35px;
+        min-height: 214px;
+        padding-bottom: 0;
+        margin-bottom: 42px;
+
+    }
+
     .advantages-wrap {
         flex-direction: column;
         justify-content: center;
@@ -128,12 +151,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
     }
-    .registration-right, .registration-left  {
+    .registration-right,
+    .registration-left {
         padding: 20px 5px;
         width: 339px;
-
     }
     .registration-form {
         width: 339px;
