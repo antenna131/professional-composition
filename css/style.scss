@@ -14,6 +14,8 @@ body {
     width: $displaywidth;
     margin: 0 auto;
 }
+
+
 .visiuality-hidden {
     position: absolute;
     left: -999999px;
@@ -38,12 +40,14 @@ body {
     align-items: center;
     justify-content: flex-end;
 }
+
 .offer-title {
     font-weight: 900;
     @include font(48px, 40px);
     border-left: 12px solid $maincolor;
     padding-left: 16px;
     margin-right: 90px;
+    color: $mainblack;
 }
 .offer-title-small {
     font-weight: bold;
@@ -77,7 +81,7 @@ body {
     justify-content: space-between;
 }
 .categories-item {
-    width: 360px;
+    width: $cardwidth;
     height: 260px;
     background-color: #211616B2;
     text-align: center;
@@ -242,6 +246,9 @@ body {
     padding-top: 28px;
     padding-bottom: 16px;
     color: #FBFBFB;
+    @include font (19px, 24px);
+    font-weight: normal;
+    text-align: center;
 }
 .advantages-text {
     color: #FBFBFB;
@@ -294,7 +301,7 @@ body {
     margin-bottom: 32px;
 }
 .subscribe {
-    font-weight: 700;
+    font-weight: bold;
     @include font(24px, 40px);
     color: #222224;
     padding: 16px 20px;
@@ -368,3 +375,7 @@ footer {
 .social-icon-item:hover .social-icon-item-img {
     fill: white;
 }
+@import "_media.scss";
+
+
+

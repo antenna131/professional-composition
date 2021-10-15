@@ -190,6 +190,7 @@ header {
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
   margin-right: 90px;
+  color: #222222;
 }
 
 .offer-title-small {
@@ -1171,6 +1172,10 @@ legend {
   padding-top: 28px;
   padding-bottom: 16px;
   color: #FBFBFB;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
 }
 
 .advantages-text {
@@ -1240,7 +1245,7 @@ legend {
 }
 
 .subscribe {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 40px;
   color: #222224;
@@ -1367,5 +1372,102 @@ footer {
 
 .social-icon-item:hover .social-icon-item-img {
   fill: white;
+}
+
+/* tablet*/
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 735px;
+  }
+  .offer-wrap {
+    min-height: 368px;
+  }
+  .offer-title {
+    margin-right: 0px;
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .offer-title-small {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .categories {
+    padding-top: 20px;
+    padding-bottom: 155px;
+  }
+  .categories-item {
+    width: 230px;
+    height: 168px;
+  }
+  .categories-item-acc {
+    height: 116px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .popular-products-wrap {
+    margin-top: 73px;
+  }
+  .popular-products-item {
+    margin-bottom: 17px;
+  }
+  .catalog {
+    margin-top: 16px;
+    margin-bottom: 65px;
+  }
+  .advantages-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .advantages-item:nth-child(2) {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .feedback {
+    min-height: 690px;
+  }
+  .feedback-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 54px;
+    padding-bottom: 140px;
+  }
+  .feedback-item-subscribe {
+    margin-right: 0;
+    padding-top: 48px;
+  }
+  .feedback-item-form {
+    margin-top: 27px;
+  }
+  .subscribe-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    width: 340px;
+    outline: 1px solid red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
