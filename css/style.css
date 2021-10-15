@@ -233,6 +233,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
 }
 
 .categories-item {
@@ -849,6 +850,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 64px;
 }
 
@@ -870,7 +874,7 @@ legend {
 
 .registration-input {
   margin-bottom: 21px;
-  padding: 13px 170px 16px 16px;
+  padding: 13px 150px 16px 16px;
   border: none;
   background-color: #FFFFFF;
   border: 1px solid #A4A4A4;
@@ -921,17 +925,18 @@ legend {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
 }
 
-.registration-left-text {
+.registration-left-text,
+.registration-left-check {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
 }
 
-.registration-left-text::before {
+.registration-left-check::before {
   content: url(../img/check.svg);
   padding-right: 23px;
 }
@@ -1417,6 +1422,21 @@ footer {
     margin-top: 16px;
     margin-bottom: 65px;
   }
+  .registration-right {
+    padding-right: 22px;
+  }
+  .registration-left {
+    max-width: 354px;
+  }
+  .registration-left-heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 32px;
+  }
+  .registration-left-text, .registration-left-check {
+    font-size: 16px;
+    line-height: 19px;
+  }
   .advantages-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1503,6 +1523,25 @@ footer {
   .catalog {
     margin-top: 41px;
     margin-bottom: 95px;
+  }
+  .registration-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .registration-right, .registration-left {
+    padding: 20px 5px;
+    width: 339px;
+  }
+  .registration-form {
+    width: 339px;
   }
   .feedback {
     min-height: 550px;

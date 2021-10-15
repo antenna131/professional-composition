@@ -39,6 +39,23 @@
         margin-top: 16px;
         margin-bottom: 65px;
     }
+    .registration-right {
+        padding-right: 22px;
+    }
+    .registration-left {
+        max-width: 354px;
+        &-heading {
+            @include font(16px, 19px);
+            padding-bottom: 32px;
+        }
+        &-text,
+        &-check {
+            @include font(16px, 19px);
+        }
+        // &-check {
+        //     // text-align: justify;
+        // }
+    }
     .advantages-wrap {
         flex-direction: column;
         justify-content: center;
@@ -107,6 +124,21 @@
         margin-top: 41px;
         margin-bottom: 95px;
     }
+    .registration-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .registration-right, .registration-left  {
+        padding: 20px 5px;
+        width: 339px;
+
+    }
+    .registration-form {
+        width: 339px;
+    }
+
     .feedback {
         min-height: 550px;
     }
