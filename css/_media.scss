@@ -19,11 +19,14 @@
     }
     .categories-item {
         width: 230px;
-        height: 168px;
+        min-height: 168px;
     }
+    .categories-wrap {
+        gap: 20px;
+    }
+
     .categories-item-acc {
         height: 116px;
-        margin-top: 20px;
         width: 100%;
     }
     .popular-products-wrap {
@@ -65,9 +68,6 @@
     .feedback-item-form {
         margin-top: 27px;
     }
-    .subscribe-button {
-        padding: 10px 20px;
-    }
 }
 
 // mobile
@@ -75,5 +75,67 @@
     .wrapper {
         width: 340px;
         outline: 1px solid red;
+    }
+    .account-link,
+    .cart-link {
+        display: none;
+    }
+    .offer-wrap {
+        background-image: none;
+        min-height: 363px;
+    }
+
+    .categories {
+        padding-top: 64px;
+        margin-bottom: 32px;
+    }
+    .categories-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+    .categories-item {
+        width: 343px;
+        min-height: 248px;
+    }
+    .categories-item-acc {
+        min-height: 111px;
+        width: 100%;
+    }
+    .catalog {
+        margin-top: 41px;
+        margin-bottom: 95px;
+    }
+    .feedback {
+        min-height: 550px;
+    }
+    .feedback-item {
+        width: 340px;
+    }
+    .feedback-item-subscribe {
+        padding-top: 59px;
+    }
+    .feedback-heading {
+        @include font(14px, 21px);
+        margin-bottom: 22px;
+    }
+    .subscribe {
+        font-weight: bold;
+        @include font(24px, 37px);
+    }
+    .feedback-item-form {
+        width: 340px;
+        justify-content: center;
+    }
+    .footer-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icon {
+        padding-top: 43px;
+        padding-bottom: 10px;
     }
 }
