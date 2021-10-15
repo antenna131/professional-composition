@@ -19,6 +19,7 @@
 .cart-product-explain-heading {
     padding: 22px 97px 40px 31px;
     @include headfont();
+    font-weight: 400;
 }
 .cart-product-explain-text-item {
     padding-left: 32px;

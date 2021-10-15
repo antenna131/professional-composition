@@ -991,6 +991,7 @@ legend {
   padding: 22px 97px 40px 31px;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
 }
 
 .cart-product-explain-text-item {
@@ -1386,7 +1387,9 @@ footer {
     width: 735px;
   }
   .offer-wrap {
-    min-height: 368px;
+    height: 368px;
+    background-size: auto 100%;
+    background-position-x: -110px;
   }
   .offer-title {
     margin-right: 0px;
@@ -1518,8 +1521,7 @@ footer {
 
 @media (max-width: 760px) {
   .wrapper {
-    width: 340px;
-    outline: 1px solid red;
+    width: 360px;
   }
   .account-link,
   .cart-link {
@@ -1528,6 +1530,20 @@ footer {
   .offer-wrap {
     background-image: none;
     min-height: 363px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer-title {
+    text-align: center;
+    padding-left: 0;
+    margin-right: 0px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .offer-title-small {
+    font-size: 20px;
+    line-height: 24px;
   }
   .categories {
     padding-top: 64px;
@@ -1571,10 +1587,63 @@ footer {
   .registration-right,
   .registration-left {
     padding: 20px 5px;
-    width: 339px;
+    width: 340px;
   }
   .registration-form {
-    width: 339px;
+    width: 340px;
+  }
+  .cart-wrap {
+    margin-top: 39px;
+  }
+  .cart-product-item {
+    margin-bottom: 32px;
+  }
+  .cart-product-img {
+    width: 143px;
+    height: 188px;
+  }
+  .cart-product-explain-heading {
+    padding: 13px 53px 25px 17px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart-product-explain-text-item {
+    padding-left: 17px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-product-explain-quality {
+    font-size: 10px;
+    line-height: 12px;
+    width: 23px;
+    padding: 0.5px 8px;
+    margin-left: 15px;
+  }
+  .cart-item {
+    margin-bottom: 75px;
+  }
+  .cart-item-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart-item-sum {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .cart-button-item {
+    padding: 6px 14px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cart-button {
+    padding-top: 30px;
+    padding-bottom: 48px;
   }
   .feedback {
     min-height: 550px;

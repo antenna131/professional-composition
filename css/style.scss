@@ -50,6 +50,9 @@ body {
     margin-right: 90px;
     color: $mainblack;
 }
+//  br {
+//     line-height: 0;
+// }
 .offer-title-small {
     font-weight: bold;
     @include font(32px, 38px);
