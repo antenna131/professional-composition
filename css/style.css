@@ -35,9 +35,6 @@ body {
 
 .visiuality-hidden {
   position: absolute;
-  left: -999999px;
-  width: 0px;
-  height: 0;
   visibility: hidden;
 }
 
@@ -57,7 +54,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .header-col-left {
@@ -73,7 +70,7 @@ header {
 }
 
 .logo-link {
-  margin-right: 41px;
+  padding-right: 40px;
 }
 
 .logo-link, .account-link, .cart-link {
@@ -976,6 +973,12 @@ legend {
   padding: 16px 60px 16px 16px;
   margin-top: 39px;
   border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.registration-name-button:hover {
+  border: 1px solid black;
 }
 
 /* Корзина */
@@ -1561,7 +1564,7 @@ footer {
 
 @media (max-width: 760px) {
   .wrapper {
-    width: 360px;
+    width: 340px;
   }
   .account-link,
   .cart-link {
@@ -1576,7 +1579,7 @@ footer {
   }
   .offer-title {
     text-align: center;
-    padding-left: 0;
+    padding-left: 16px;
     margin-right: 0px;
     font-size: 38px;
     line-height: 46px;
@@ -1601,7 +1604,7 @@ footer {
     gap: 32px;
   }
   .categories-item {
-    width: 343px;
+    width: 333px;
     min-height: 248px;
   }
   .categories-item-acc {
@@ -1705,7 +1708,7 @@ footer {
     line-height: 37px;
   }
   .feedback-item-form {
-    width: 340px;
+    width: 330px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

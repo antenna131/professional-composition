@@ -114,7 +114,7 @@
 // mobile
 @media (max-width: 760px) {
     .wrapper {
-        width: 360px;
+        width: 340px;
         // outline: 1px solid red;
     }
     .account-link,
@@ -128,7 +128,7 @@
     }
     .offer-title {
         text-align: center;
-        padding-left: 0;
+        padding-left: 16px;
         margin-right: 0px;
         @include font(38px, 46px);
     }
@@ -146,7 +146,7 @@
         gap: 32px;
     }
     .categories-item {
-        width: 343px;
+        width: 333px;
         min-height: 248px;
     }
     .categories-item-acc {
@@ -235,7 +235,7 @@
         @include font(24px, 37px);
     }
     .feedback-item-form {
-        width: 340px;
+        width: 330px;
         justify-content: center;
     }
     .footer-wrap {

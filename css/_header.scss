@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 5px;
 }
 .header-col-left {
     display: flex;
@@ -14,7 +14,7 @@ header {
     align-items: center;    
 }
 .logo-link {
-    margin-right: 41px;
+    padding-right: 40px;
 }
 .logo-link,.account-link, .cart-link {
     text-decoration: none;
