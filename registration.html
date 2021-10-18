@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='true' name='HandheldFriendly' />
+    <meta content='width' name='MobileOptimized' />
+    <meta content='yes' name='apple-mobile-web-app-capable' />
     <title>REGISTRATION</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/595b07c817.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="page">
     <header class="header">
         <div class="wrapper header-wrap">
             <div class="header-col-left">
@@ -82,66 +85,76 @@
             </div>
         </div> 
     </header>
-    <section class="page-title">
-        <div class="wrapper">
-            <h1 class="page-title-heading">REGISTRATION</h1>
-        </div>
-    </section>
-    <section class="registration">
-        <div class="wrapper registration-wrap">
-            <div class="registration-right">
-                <form class="registration=form" action="#">
-                    <fieldset class="registration-name" >
-                        <legend>Your Name</legend>
-                        <p><input class="registration-input" type="text" placeholder="First Name" required></p>
-                        <p><input class="registration-input" type="text" placeholder="Last Name"></p>
-                        <label><input  class="registration-name-radio" type="radio" name="gender" value="M" required>Male</label>
-                        <label><input  class="registration-name-radio" type="radio" name="gender" value="W" required>Female</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Login details</legend>
-                        <p><input class="registration-input " type="email" placeholder="Email" required></p>
-                        <p><input class="registration-input"  type="password" placeholder="Password" required></p>
-                        <p class="registration-name-text" >Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                        <button class="registration-name-button"> JOIN NOW
-                        </button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="registration-left">
-                <p class="registration-left-heading">LOYALTY HAS ITS PERKS</p>
-                <p class="registration-left-text ">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you
-                join:</p>
-                <p class="registration-left-check"> 15% off welcome offer</p>
-                <p class="registration-left-check"> Free shipping, returns and exchanges on all orders</p>
-                <p class="registration-left-check"> $10 off a purchase on your birthday</p>
-                <p class="registration-left-check"> Early access to products</p>
-                <p class="registration-left-check"> Exclusive offers & rewards</p>
-            </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="wrapper feedback-wrap">
-            <div class="feedback-item">
-                <img class="img-rewiew" src="img/rewiew.png" alt="review">
-                <p class="feedback-item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="feedback-item-text-italic">a pulvinar purus condimentum“</span></p>
-            </div>
-            <div class="feedback-item feedback-item-subscribe">
-                <p class="feedback-heading"><span class="subscribe">SUBSCRIBE</span> <br>
-                    FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="feedback-item-form" action="#">
-                <input class="feedback-input" type="email" name="email" id="email" placeholder="Enter Your Email" required/>
-                <input class="subscribe-button" type="submit" value="Subscribe"/>
-                </form>
-            </div>       
-        </div>
-    </section>
+    <div class="main">
+            <section class="page-title">
+                <div class="wrapper">
+                    <h1 class="page-title-heading">REGISTRATION</h1>
+                </div>
+            </section>
+            <section class="registration">
+                <div class="wrapper registration-wrap">
+                    <div class="registration-right">
+                        <h2 class="visiuality-hidden">Форма регистрации</h2>
+                        <form class="registration=form" action="#">
+                            <fieldset class="registration-name">
+                                <legend>Your Name</legend>
+                                <p><input class="registration-input" type="text" placeholder="First Name" required></p>
+                                <p><input class="registration-input" type="text" placeholder="Last Name"></p>
+                                <label><input class="registration-name-radio" type="radio" name="gender" value="M"
+                                        required>Male</label>
+                                <label><input class="registration-name-radio" type="radio" name="gender" value="W"
+                                        required>Female</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Login details</legend>
+                                <p><input class="registration-input " type="email" placeholder="Email" required></p>
+                                <p><input class="registration-input" type="password" placeholder="Password" required></p>
+                                <p class="registration-name-text">Please use 8 or more characters, with at least 1 number and a
+                                    mixture of uppercase and lowercase letters</p>
+                                <button class="registration-name-button"> JOIN NOW
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="registration-left">
+                        <p class="registration-left-heading">LOYALTY HAS ITS PERKS</p>
+                        <p class="registration-left-text ">Get in on the loyalty program where you can earn points and unlock
+                            serious perks. Starting with these as soon as you
+                            join:</p>
+                        <p class="registration-left-check"> 15% off welcome offer</p>
+                        <p class="registration-left-check"> Free shipping, returns and exchanges on all orders</p>
+                        <p class="registration-left-check"> $10 off a purchase on your birthday</p>
+                        <p class="registration-left-check"> Early access to products</p>
+                        <p class="registration-left-check"> Exclusive offers & rewards</p>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="wrapper feedback-wrap">
+                    <div class="feedback-item">
+                        <img class="img-rewiew" src="img/rewiew.png" alt="review">
+                        <p class="feedback-item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                                class="feedback-item-text-italic">a pulvinar purus condimentum“</span></p>
+                    </div>
+                    <div class="feedback-item feedback-item-subscribe">
+                        <p class="feedback-heading"><span class="subscribe">SUBSCRIBE</span> <br>
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="feedback-item-form" action="#">
+                            <input class="feedback-input" type="email" name="email" id="email" placeholder="Enter Your Email"
+                                required />
+                            <input class="subscribe-button" type="submit" value="Subscribe" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </div>
     <footer>
         <div class="wrapper footer-wrap">
             <div class="copyright">
             <p>&copy;&nbsp;2021 Brand All Rights Reserved.</p>
             </div>
             <div class="social-icon">
+                <h3 class="visiuality-hidden">Контакты</h3>
                 <a class="social-icon-item" href="#">
                     <svg class="social-icon-item-img" width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

@@ -7,8 +7,25 @@
           box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 body {
   font-family: "Lato", sans-serif;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper {
@@ -159,6 +176,12 @@ header {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /* Промо блок главной */
@@ -1045,6 +1068,13 @@ legend {
   background-color: transparent;
   border: 1px solid #A4A4A4;
   color: #000000;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.cart-button-item:hover {
+  background-color: #F16D7F;
+  color: white;
 }
 
 .cart-item {
@@ -1100,6 +1130,13 @@ legend {
   padding: 9.5px 11.5px 14px 14px;
   background-color: transparent;
   border: 1px solid #A4A4A4;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cart-item-button:hover {
+  background-color: #F16D7F;
+  color: white;
 }
 
 .cart-item-sum {
@@ -1146,6 +1183,8 @@ legend {
   padding: 15px 42px;
   text-align: center;
   border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .cart-item-submit:hover {
@@ -1323,6 +1362,7 @@ legend {
 /* Подвал */
 footer {
   background-color: #222224;
+  margin-top: auto;
 }
 
 .footer-wrap {

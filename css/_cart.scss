@@ -56,6 +56,11 @@
     background-color: transparent;
     border: $thinborder;
     color: #000000;
+    transition: 0.4s ease;
+    &:hover {
+        background-color: $maincolor;
+        color: white;
+    }
 }
 .cart-item {
     width: $cardwidth;
@@ -83,6 +88,11 @@
     padding: 9.5px 11.5px 14px 14px;
     background-color: transparent;
     border: $thinborder;
+    transition: 0.3s ease;
+    &:hover {
+        background-color: $maincolor;
+        color: white;
+    }
 }
 .cart-item-sum {
     background-color: #F5F3F3;
@@ -121,6 +131,7 @@
     padding: 15px 42px;
     text-align: center;
     border: none;
+    transition: 0.3s ease;
     &:hover {
         background-color: #FFFFFF;
         color: $maincolor;

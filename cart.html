@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='true' name='HandheldFriendly' />
+    <meta content='width' name='MobileOptimized' />
+    <meta content='yes' name='apple-mobile-web-app-capable' />
     <title>SHOPPING CART</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +17,11 @@
     <script src="https://kit.fontawesome.com/595b07c817.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="wrapper header-wrap">
             <div class="header-col-left">
-                <a class="logo-link" href="#"><img src="img/logo.svg" alt="Logo">
+                <a class="logo-link" href="index.html"><img src="img/logo.svg" alt="Logo">
                 </a>
                 <button class="search"><img src="img/search.svg" alt="Search">
                 </button>
@@ -85,104 +88,110 @@
                         </ul>
                     </div>
                 </nav>
-                <a class="account-link" href="#"><img src="img/account.svg" alt="account">
+                <a class="account-link" href="registration.html"><img src="img/account.svg" alt="account">
                 </a>
                 <a class="cart-link"><img src="img/cart.svg" alt="cart">
                 </a>
             </div>
         </div>
     </header>
-    <section class="page-title">
-        <div class="wrapper">
-            <h1 class="page-title-heading">SHOPPING CART</h1>
-        </div>
-    </section>
-    <section class="cart">
-        <div class="wrapper cart-wrap">
-            <div class="cart-item-right">
-                <div class="cart-product">
-                    <div class="cart-product-item">
-                        <img class="cart-product-img" src="img/product-7.png" alt="product in cart">
-                        <div class="cart-product-explain">
-                            <h3 class="cart-product-explain-heading">MANGO PEOPLE <br> T-SHIRT</h3>
-                            <div class="cart-product-explain-text">
-                                <p class="cart-product-explain-text-item">Price: <span
-                                        class="cart-product-explain-text-item-pink">$300</span></p>
-                                <p class="cart-product-explain-text-item">Color: Red</p>
-                                <p class="cart-product-explain-text-item">Size: Xl</p>
-                                <div class="cart-product-explain-text-item quality">
-                                    <p>Quantity:</p><label><input class="cart-product-explain-quality" type="number"
-                                            value="1"></label>
+    <div class="main">
+            <section class="page-title">
+                <div class="wrapper">
+                    <h2 class="page-title-heading">SHOPPING CART</h2>
+                </div>
+            </section>
+            <section class="cart">
+                <div class="wrapper cart-wrap">
+                    <div class="cart-item-right">
+                        <div class="cart-product">
+                            <h3 class="visiuality-hidden">Выбранные товары</h3>
+                            <div class="cart-product-item">
+                                <img class="cart-product-img" src="img/product-7.png" alt="product in cart">
+                                <div class="cart-product-explain">
+                                    <h4 class="cart-product-explain-heading">MANGO PEOPLE <br> T-SHIRT</h4>
+                                    <div class="cart-product-explain-text">
+                                        <p class="cart-product-explain-text-item">Price: <span
+                                                class="cart-product-explain-text-item-pink">$300</span></p>
+                                        <p class="cart-product-explain-text-item">Color: Red</p>
+                                        <p class="cart-product-explain-text-item">Size: Xl</p>
+                                        <div class="cart-product-explain-text-item quality">
+                                            <p>Quantity:</p><label><input class="cart-product-explain-quality" type="number"
+                                                    value="1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-item">
+                                <img class="cart-product-img" src="img/product-8.png" alt="product in cart">
+                                <div class="cart-product-explain">
+                                    <h4 class="cart-product-explain-heading">MANGO PEOPLE <br> T-SHIRT</h4>
+                                    <div class="cart-product-explain-text">
+                                        <p class="cart-product-explain-text-item">Price: <span
+                                                class="cart-product-explain-text-item-pink">$300</span></p>
+                                        <p class="cart-product-explain-text-item">Color: Red</p>
+                                        <p class="cart-product-explain-text-item">Size: Xl</p>
+                                        <div class="cart-product-explain-text-item quality">
+                                            <p>Quantity:</p><label><input class="cart-product-explain-quality" type="number"
+                                                    value="1"></label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cart-product-item">
-                        <img class="cart-product-img" src="img/product-8.png" alt="product in cart">
-                        <div class="cart-product-explain">
-                            <h3 class="cart-product-explain-heading">MANGO PEOPLE <br> T-SHIRT</h3>
-                            <div class="cart-product-explain-text">
-                                <p class="cart-product-explain-text-item">Price: <span
-                                        class="cart-product-explain-text-item-pink">$300</span></p>
-                                <p class="cart-product-explain-text-item">Color: Red</p>
-                                <p class="cart-product-explain-text-item">Size: Xl</p>
-                                <div class="cart-product-explain-text-item quality">
-                                    <p>Quantity:</p><label><input class="cart-product-explain-quality" type="number"
-                                            value="1"></label>
-                                </div>
-                            </div>
+                        <div class="cart-button">
+                            <button class="cart-button-item">CLEAR SHOPPING CART</button>
+                            <button class="cart-button-item">CONTINUE SHOPPING</button>
                         </div>
                     </div>
-                </div>
-                <div class="cart-button">
-                    <button class="cart-button-item">CLEAR SHOPPING CART</button>
-                    <button class="cart-button-item">CONTINUE SHOPPING</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <form class="cart-item-form" action="#">
-                    <fieldset>
-                        <legend>SHIPPING ADRESS</legend>
-                            <p><input class="cart-item-input" type="text" placeholder="Bangladesh" required></p>
-                            <p><input class="cart-item-input" type="text" value="State" required></p>
-                            <p><input class="cart-item-input" type="text" value="Postcode / Zip" required></p>
-                            <button class="cart-item-button">GET A QUOTE</button> 
-                    </fieldset>
-                    <div class="cart-item-sum">
-                        <p class="cart-item-text-sub">SUB TOTAL<span class="cart-item-text-sub-summa">$900</span></p>
-                        <p class="cart-item-text-grand">GRAND TOTAL <span class="cart-item-text-grand-pink">$900</span>
-                        </p>
-                        <hr>
-                        <input class="cart-item-submit" type="submit" value="PROCEED TO CHECKOUT">
+                    <div class="cart-item">
+                        <form class="cart-item-form" action="#">
+                            <h3 class="visiuality-hidden">Доставка</h3>
+                            <fieldset>
+                                <legend>SHIPPING ADRESS</legend>
+                                <p><input class="cart-item-input" type="text" placeholder="Bangladesh" required></p>
+                                <p><input class="cart-item-input" type="text" value="State" required></p>
+                                <p><input class="cart-item-input" type="text" value="Postcode / Zip" required></p>
+                                <button class="cart-item-button">GET A QUOTE</button>
+                            </fieldset>
+                            <div class="cart-item-sum">
+                                <h5 class="visiuality-hidden">Итого</h5>
+                                <p class="cart-item-text-sub">SUB TOTAL<span class="cart-item-text-sub-summa">$900</span></p>
+                                <p class="cart-item-text-grand">GRAND TOTAL <span class="cart-item-text-grand-pink">$900</span>
+                                </p>
+                                <hr>
+                                <input class="cart-item-submit" type="submit" value="PROCEED TO CHECKOUT">
+                            </div>
+                        </form>
                     </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="wrapper feedback-wrap">
-            <div class="feedback-item">
-                <img class="img-rewiew" src="img/rewiew.png" alt="review">
-                <p class="feedback-item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
-                        class="feedback-item-text-italic">a pulvinar purus condimentum“</span></p>
-            </div>
-            <div class="feedback-item feedback-item-subscribe">
-                <p class="feedback-heading"><span class="subscribe">SUBSCRIBE</span> <br>
-                    FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="feedback-item-form" action="#">
-                    <input class="feedback-input" type="email" name="email" id="email" placeholder="Enter Your Email"
-                        required />
-                    <input class="subscribe-button" type="submit" value="Subscribe" />
-                </form>
-            </div>
-        </div>
-    </section>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="wrapper feedback-wrap">
+                    <div class="feedback-item">
+                        <img class="img-rewiew" src="img/rewiew.png" alt="review">
+                        <p class="feedback-item-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                                class="feedback-item-text-italic">a pulvinar purus condimentum“</span></p>
+                    </div>
+                    <div class="feedback-item feedback-item-subscribe">
+                        <p class="feedback-heading"><span class="subscribe">SUBSCRIBE</span> <br>
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="feedback-item-form" action="#">
+                            <input class="feedback-input" type="email" name="email" id="email" placeholder="Enter Your Email"
+                                required />
+                            <input class="subscribe-button" type="submit" value="Subscribe" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </div>
     <footer>
         <div class="wrapper footer-wrap">
             <div class="copyright">
                 <p>&copy;&nbsp;2021 Brand All Rights Reserved.</p>
             </div>
             <div class="social-icon">
+                <h3 class="visiuality-hidden">Контакты</h3>
                 <a class="social-icon-item" href="#">
                     <svg class="social-icon-item-img" width="11" height="16" viewBox="0 0 11 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
