@@ -20,51 +20,53 @@
 }
 .breadcrumb-item-link {
     text-decoration: none;
+    color: $grey;
 }
 .active {
     font-weight: 700;
     color: $maincolor;
 }
-/* Сортировка*/
 
-.filter {
-    ::-webkit-details-marker {display: none;}
-}
+/*Блок фильтра*/
 
 .selection-wrap {
     display: flex;
-    justify-content:left;
-    align-items:center;
+    justify-content:start;
+    align-items:flex-start;
     padding-top: 51px;
-    padding-bottom: 64px;
-    margin-bottom: 20px;
+    padding-bottom: 16px;   
 }
-.sort{
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
+.selection-item {
     width: $cardwidth;
-    margin-right: 30px;
+    background-color: white;
     text-align: left;
 }
-
 .filter {
-    width: $cardwidth;
+    width: 100%;
     position: relative;
-    margin-bottom: 30px;
-    background-color: white;
-    &-block {
-        width: 100%;
-        position: absolute;
-        
-    }
-    &-title {
+    z-index: 1;    
+    &-name {
+        display: block;
         text-decoration: none;
         color: black;
         padding-bottom: 16px;
+        font-weight: 600;
+        @include font;
         &:hover{
             color: $maincolor;
         }    
+    }
+    &-drop {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    &-title {
+        &:nth-child(2) {
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }   
     }
     &-category {
         color: $grey;
@@ -73,70 +75,107 @@
         padding-top: 8px;
         padding-bottom: 11.5px;
         padding-left: 11px;
-        margin-bottom: 18px;
         border-left: $pinkborder;
         display: block;
         border-bottom: 1px solid #EBEBEB;
-        &-pink {
-            color: $maincolor;
-        }
     }
     &-item {
         font-weight: normal;
         @include font;
         padding-bottom: 11px;
-
+        text-align: left;
     }
     &-list {
         list-style-type: none;
         padding-top: 24px;
-        padding-left: 11px;
-        padding-bottom: 16px;
+        padding-left: 12px;
     }
     &-link {
         text-decoration: none;
         color: $grey;
     }
-
-}
-.filter-block 
-    ::-webkit-details-marker {
-    display: none;
-}
-      
-.filter-img {
+    &-img {
     fill:black;
     margin-left: 11px;
-    &:hover{
+    }    
+}
+/* Правила для действий с filter*/
+.filter
+    ::-webkit-details-marker {
+    display: none;
+    }    
+
+.filter:hover .filter-img{
     fill: $maincolor;
+}
+
+.filter[open] .filter-name {
+    color: $maincolor;
+    padding-left: 10px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.21);;
+}
+.filter[open] .filter-img {
+    fill: $maincolor;
+}
+.filter-title[open] .filter-category {
+    color: $maincolor;
+
+}
+
+/* Сортировка*/
+.sort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $cardwidth;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+    &-title {
+        text-transform: uppercase;
+        font-weight: normal;
+        @include font;
+        color: $grey;
     }
 }
+
 .input {
     &-drop {
         position: absolute;
+        z-index: 2;
         display: flex;
         flex-direction: column;
+        width: 79px;
+        height: 105px;
+        top: 33px;
+        background-color: #FFFFFF;
+        padding: 10px;
         
     }
     &-title {
-        display: none;
+        color: $grey;
+        @include font (14px, 16px);
+        font-weight:normal;
+        text-transform: uppercase;
+        padding-left: 9.5px;   
     }
     &-check {
-        display: none;
+        border: 1px solid #EBEBEB;
+        margin-bottom: 13px;
+        margin-right: 9.5px;
     }
 }
-.item-title:hover .input-drop {
-    display: block;
 
+.sort-item ::-webkit-details-marker {
+    display: none;
+} 
+.sort-item[open] .input-drop {
+    box-shadow: $shadow;
 }
-
-
-
-
-    
-
-
    
+
+
 .pagination-wrap {
     display: flex;
     justify-content: center;
@@ -148,14 +187,18 @@
     padding:12px 30px 12px 30px;
     border: 1px solid #EBEBEB;
 }
-.page-link {
+
+.page {
+    &-link {
     text-decoration: none;
     color: $maincolor;
-}
-.page-item {
-    padding-right: 20px;
-    @include font(16px,19px);
-    &-last {
+    }
+    &-item {
+        padding-right: 20px;
+        @include font(16px,19px);
+        &:nth-child(7) {
         padding-right: 0;
-    }   
+        }
+
+    }    
 }
